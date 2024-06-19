@@ -9,22 +9,50 @@ body {
 #container {
   display: flex;
   height: 100vh;
+  width: 100%;
 }
 
-#background {
+#background-section {
   background-image: url("img/background.jpg");
+  width: 100%; 
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
 }
 
+/* The ODIN logo */
 #logo-container {
-  background-color: antiquewhite;
-  width: 2rem;
+  background-color: rgba(0,0,0,0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Push it to about 1/3 height */
+  margin-top: 20vh;
+
+  height: 10rem;
 }
 
 #logo-container h2 {
   color: white;
+  font-size: 4rem;
+  font-weight: 400;
 }
 
 #logo {
-  width: 10rem;
-  height: 10rem;
+  /* display: block; */
+  /* width: auto;
+  height: auto; */
+
+  /* As big as the parent */
+  max-height: 90%;
+}
+
+.caption {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px black;
 }

@@ -1,80 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Signup Form</title>
-  
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <!-- Division for left and right sides -->
   <div id="container">
 
     <!-- Background image with logo -->
-     <div id="background-section">
-        <div id="logo-container">
-          <img id="logo" src="img/odin-logo.png" alt="">
-          <h2>ODIN</h2>
-        </div>
-        
-        <p class="caption">Photo by somebody on Unsplash</p>
-     </div>
-
-     <!-- Text with form -->
-     <div id="form-section">
-
-       <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started. </h2>
- 
-       <h2>You <em>know</em> you want to.</h2>
- 
-      <!-- Form -->
-       <form action="/signup" method="POST">
- 
-         <!-- Different background -->
-         <div id="form">
-   
-           <h3>Let's do this!</h3>
-   
-           <div class="form-input">
-             <label for="first-name">First name</label>
-             <input type="text" name="first-name">
-           </div>
-   
-           <div class="form-input">
-             <label for="last-name">Last name</label>
-             <input type="text" name="last-name">
-           </div>
-   
-           <div class="form-input">
-             <label for="email">Email</label>
-             <input type="email" name="email">
-           </div>
- 
-           <div class="form-input">
-             <label for="phone">Phone number</label>
-             <input type="text" name="phone">
-           </div>
-   
-           <div class="form-input">
-            <label for="password">Password</label>
-             <input type="password" name="password">
-           </div>
-           
-           <div class="form-input">
-             <label for="password">Confirm password</label>
-             <input type="password" name="password">
-           </div>
-   
-         </div>
- 
-         <button type="submit">Create Account</button>
-       </form>
- 
-       <p>Already have an account? <a href="https://www.google.com">Log in</a></p>
-
+    <div id="background-section">
+      <div id="logo-container">
+        <img id="logo" src="img/odin-logo.png" alt="">
+        <h2>ODIN</h2>
       </div>
+
+      <p class="caption">Photo by somebody on Unsplash</p>
+    </div>
+
+    <!-- Text with form -->
+    <div id="form-section">
+
+      <div id="header-text">
+        <h2>This is not a real online service! You know you need something like this in your life to help you realize
+          your deepest dreams. Sign up <em>now</em> to get started. </h2>
+
+        <h2>You <em>know</em> you want to.</h2>
+      </div>
+
+
+      <!-- Form -->
+      <form action="/signup" method="POST">
+
+        <!-- Different background -->
+        <div id="form">
+
+          <h3>Let's do this!</h3>
+          <div id="input-columns">
+            <div id=input-col>
+              <div class="form-input">
+                <label for="first-name">First name</label>
+                <input type="text" name="first-name">
+              </div>
+
+              <div class="form-input">
+                <label for="email">Email</label>
+                <input type="email" name="email">
+              </div>
+              
+              <div class="form-input">
+                <label for="password">Password</label>
+                <input type="password" name="password">
+              </div>
+
+
+            </div>
+
+            <div id=input-col>
+
+              <div class="form-input">
+                <label for="last-name">Last name</label>
+                <input type="text" name="last-name">
+              </div>
+
+              <div class="form-input">
+                <label for="phone">Phone number</label>
+                <input type="text" name="phone">
+              </div>
+
+              <div class="form-input">
+                <label for="password">Confirm password</label>
+                <input type="password" name="password">
+              </div>
+              </div>
+        </div>
+    </div>
+
+    <button type="submit">Create Account</button>
+    </form>
+
+    <p>Already have an account? <a href="https://www.google.com">Log in</a></p>
+
+  </div>
 
   </div>
 </body>
+
 </html>
